@@ -1,0 +1,9 @@
+Age = raw_input("Age?")
+try:
+    int(Age)
+except ValueError:
+    try:
+        float(Age), str(Age)
+    except ValueError:
+        print("Please enter a number")
+        Age = raw_input("Age?")
